@@ -1,0 +1,10 @@
+<div class="horizontal-piece"
+     [ngStyle]="{'left.px': getLeft(), 'width.px': getWidth() / 2.0, 'top.px': getLeftTop() - width / 2.0}"></div>
+<div class="vertical-piece"
+     [ngStyle]="{'left.px': getHorizontalCenter() - width / 2.0, 'top.px': getVerticalTop() - width / 2.0, 'height.px': getHeight() + width}"></div>
+<div class="horizontal-piece"
+     [ngStyle]="{'left.px':  getHorizontalCenter(), 'width.px': getWidth() / 2.0, 'top.px': getRightTop() - width / 2.0}"></div>
+<div class="arrow-right" *ngIf="!isVertical() && isLeftToRight()" [ngStyle]="{'left.px':  endX - 5, 'top.px': endY - 10}"></div>
+<div class="arrow-left" *ngIf="!isVertical() && !isLeftToRight()" [ngStyle]="{'left.px':  getLeft() - 5, 'top.px': getLeftTop() - 10}"></div>
+<div class="arrow-down" *ngIf="isVertical() && !isHorizontal() && isTopToBottom()" [ngStyle]="{'left.px':  getHorizontalCenter() - 10, 'top.px': endY - width / 2.0}"></div>
+<div class="arrow-up" *ngIf="isVertical() && !isHorizontal() && !isTopToBottom()" [ngStyle]="{'left.px':  getHorizontalCenter() - 10, 'top.px': endY - width}"></div>

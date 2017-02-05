@@ -1,0 +1,48 @@
+:host {
+	display      : block;
+	padding      : 40px 0;
+	width        : 460px;
+	margin-left  : auto;
+	margin-right : auto;
+}
+
+app-card {
+	background-color : white;
+}
+
+app-card h1 {
+	padding          : 14px 20px;
+	font-size        : 20px;
+	margin           : 0;
+	font-weight      : 300;
+	color            : white;
+	background-color : #4F4F4F;
+	border-radius    : 3px 3px 0 0;
+}
+
+app-card .diagrams {
+	list-style : none;
+	margin     : 0;
+	padding    : 0;
+}
+
+app-card .diagrams > li {
+	display     : flex;
+	color       : #4F4F4F;
+	align-items : center;
+	padding     : 20px;
+}
+
+app-card .diagrams > li:hover {
+	background-color: #E8E8E8;
+	cursor: pointer;
+}
+
+app-card .diagrams > li > span.link {
+	flex : 1;
+}
+
+app-card .diagrams > li > span:not(.link) {
+	font-size : 12px;
+	color     : #838383;
+}

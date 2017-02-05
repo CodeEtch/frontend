@@ -1,0 +1,38 @@
+
+footer {
+	width          : 1024px;
+	margin         : 26px auto;
+	padding-top    : 10px;
+	font-size      : 12px;
+	border-top     : 1px solid #E3E3E3;
+	flex-direction : row;
+	display        : flex; }
+
+footer .copyright {
+	color : #999999; }
+
+footer .links {
+	box-sizing : border-box;
+	flex       : 1;
+	margin     : 0 20px;
+	padding    : 0; }
+
+footer .links > li {
+	display : inline;
+	color   : #6E6E6E; }
+
+footer .links .vertical-divider {
+	display     : inline;
+	padding     : 0 16px 0 0;
+	margin-left : 16px;
+	border-left : 1px solid #E3E3E3; }
+
+footer .country {
+	position : relative;
+	right    : 0;
+	display  : inline; }
+
+footer .country .country-name {
+	font-size      : 12px;
+	vertical-align : top;
+	margin-left    : 10px; }

@@ -1,0 +1,19 @@
+<app-card>
+    <div class="name">
+        <img class="class-icon" src="/assets/images/icons/classIcon.svg">
+        <span>{{classInfo.name}}</span>
+    </div>
+    <div class="divider"></div>
+    <ul class="attributes">
+        <li *ngFor="let attributeInfo of attributeInfos"><span class="attribute-icon"></span>{{attributeInfo.name}}
+        </li>
+    </ul>
+    <div class="divider"></div>
+    <ul class="methods">
+        <li *ngFor="let methodInfo of methodInfos">
+            <img *ngIf="methodInfo.type!='constructor'" class="function-icon" src="/assets/images/icons/functionIcon.svg">
+            <img *ngIf="methodInfo.type=='constructor'" class="function-icon" src="/assets/images/icons/constructorIcon.svg">
+            {{methodInfo.type}}&nbsp;&nbsp;{{methodInfo.name}}&#40;&#41;
+        </li>
+    </ul>
+</app-card>

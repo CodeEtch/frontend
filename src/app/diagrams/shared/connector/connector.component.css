@@ -1,0 +1,52 @@
+.horizontal-piece, .vertical-piece, .arrow-right, .arrow-left, .arrow-down, .arrow-up{
+	position: absolute;
+	float: left;
+}
+
+.horizontal-piece, .vertical-piece {
+	background-color: #2096F3;
+}
+
+.horizontal-piece {
+	height: 4px;
+}
+
+.vertical-piece {
+	width: 4px;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	border-left: 10px solid #2096F3;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	border-right:10px solid #2096F3;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-top: 10px solid #2096F3;
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-bottom: 10px solid #2096F3;
+}

@@ -1,0 +1,68 @@
+:host {
+	display: block;
+	position: absolute;
+}
+
+app-card {
+	background-color: white;
+	padding: 12px 20px;
+}
+
+app-card > .name {
+	color: #6A6A6A;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+app-card > .name > .class-icon {
+	width: 29px;
+	height: 29px;
+	margin-right: 10px;
+}
+
+app-card > .divider {
+	background-color: #E9E9E9;
+	height: 2px;
+}
+
+app-card > .methods {
+	list-style: none;
+	padding: 8px 0 0 0;
+	margin: 0;
+}
+
+app-card > .methods > li, app-card > .attributes > li {
+	font-size: 14px;
+	font-weight: bold;
+	color: #777777;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+app-card > .methods > li > .function-icon {
+	margin-right: 6px;
+}
+
+app-card > .attributes {
+	list-style: none;
+	padding: 8px 0 0 0;
+	margin: 0 0 8px 0;
+}
+
+app-card > .attributes > li > .attribute-icon {
+	display: block;
+	float: left;
+	width: 10px;
+	height: 10px;
+	background-color: #D10000;
+	margin: 4px 8px 4px 4px;
+}
+
+app-card > .methods > li:not(:last-child) {
+	margin-bottom: 4px;
+}
