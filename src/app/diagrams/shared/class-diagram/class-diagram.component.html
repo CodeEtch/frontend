@@ -1,4 +1,4 @@
-<app-card>
+<app-card  [attr.data-class-id]="classInfo.uuid">
     <div class="name">
         <img class="class-icon" src="/assets/images/icons/classIcon.svg">
         <span>{{classInfo.name}}</span>
@@ -10,7 +10,7 @@
     </ul>
     <div class="divider"></div>
     <ul class="methods">
-        <li *ngFor="let methodInfo of methodInfos">
+        <li *ngFor="let methodInfo of methodInfos" [attr.data-method-id]="methodInfo.uuid">
             <img *ngIf="methodInfo.type!='constructor'" class="function-icon" src="/assets/images/icons/functionIcon.svg">
             <img *ngIf="methodInfo.type=='constructor'" class="function-icon" src="/assets/images/icons/constructorIcon.svg">
             {{methodInfo.type}}&nbsp;&nbsp;{{methodInfo.name}}&#40;&#41;
