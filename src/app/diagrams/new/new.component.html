@@ -1,6 +1,10 @@
 <app-card>
   <h1>Import repository</h1>
   <ul class="repositories">
-    <li *ngFor="let repository of repositories" [routerLink]="['../CodeEtch-api']"><span class="link">{{repository.name}}</span><span>master</span></li>
+    <li *ngFor="let repository of repositories" (click)="importRepo(repository)">
+      <span class="link">{{repository.name}}</span>
+      <span class="branch-name">master</span>
+      <span>{{repository.private ? 'private' : 'public'}}</span>
+    </li>
   </ul>
 </app-card>

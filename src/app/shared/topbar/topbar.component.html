@@ -7,13 +7,19 @@
     </div>
   </div>
   <ul class="buttons">
-    <li>
-      <a href="https://github.com/login/oauth/authorize?client_id={{client_id}}">
+    <li *ngIf="!isAutorized()">
+      <a href="https://github.com/login/oauth/authorize?client_id={{client_id}}&scope=repo">
         <div class="btn github-login">
           <img src="/assets/images/github-icon.svg">
           <span>Github login</span>
         </div>
       </a>
+    </li>
+    <li *ngIf="isAutorized()">
+      <div class="btn import-github-repos" [routerLink]="['diagrams', 'new']">
+        <img src="/assets/images/github-icon.svg">
+        <span>Import repository</span>
+      </div>
     </li>
     <li>
       <div class="btn view-diagrams" [routerLink]="['/', 'diagrams']">

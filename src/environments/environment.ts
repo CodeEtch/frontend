@@ -6,5 +6,6 @@
 export const environment = {
   production: false,
   base_api_url: 'http://localhost:1337',
-  client_id: 'cf990801fbf90489efe1'
+  client_id: 'cf990801fbf90489efe1',
+  repositoryLanguages: ['Java']
 };

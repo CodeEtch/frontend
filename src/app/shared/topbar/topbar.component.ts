@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {environment} from "../../../environments/environment";
+import {GithubService} from "../../diagrams/shared/github.service";
 
 @Component({
   selector: 'app-topbar',
@@ -9,10 +10,14 @@ import {environment} from "../../../environments/environment";
 export class TopbarComponent implements OnInit {
 
   private client_id: string;
-  constructor() { }
+  constructor(private githubService: GithubService) { }
 
   ngOnInit() {
     this.client_id = environment.client_id
+  }
+
+  isAutorized():boolean {
+    return this.githubService.isAutorized();
   }
 
 }

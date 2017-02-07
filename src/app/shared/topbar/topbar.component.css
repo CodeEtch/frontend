@@ -1,94 +1,101 @@
 :host {
-	background-color: white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	display: block;
-	padding: 10px 0;
+	background-color : white;
+	box-shadow       : 0 2px 4px rgba(0, 0, 0, 0.2);
+	display          : block;
+	padding          : 10px 0;
 }
 
 .center {
-	width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	flex-direction: row;
+	width          : 1024px;
+	margin-left    : auto;
+	margin-right   : auto;
+	display        : flex;
+	flex-direction : row;
 }
 
 .logo:hover {
-	cursor: pointer;
+	cursor : pointer;
 }
 
 .search {
-	flex: 1;
-	margin: 0 20px;
-	border-bottom: 2px solid #4F4F4F;
+	flex          : 1;
+	margin        : 0 20px;
+	border-bottom : 2px solid #4F4F4F;
 }
 
 .search > div {
-	display: flex;
-	flex-direction: row;
+	display        : flex;
+	flex-direction : row;
 }
 
 .search-icon {
-	display: inline;
-	width: 18px;
-	height: 18px;
-	margin-top: 10px;
-	background-image: url('/assets/images/search-icon.svg');
-	cursor: pointer;
+	display          : inline;
+	width            : 18px;
+	height           : 18px;
+	margin-top       : 10px;
+	background-image : url('/assets/images/search-icon.svg');
+	cursor           : pointer;
 }
 
 .search > div > input {
-	flex: 1;
-	outline: none;
-	border: none;
-	padding: 10px 10px 10px 0;
-	font-size: 16px;
-	color: #4F4F4F;
-	letter-spacing: 2px;
+	flex           : 1;
+	outline        : none;
+	border         : none;
+	padding        : 10px 10px 10px 0;
+	font-size      : 16px;
+	color          : #4F4F4F;
+	letter-spacing : 2px;
 }
 
 .buttons {
-	display: flex;
-	flex-direction: row;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+	display        : flex;
+	flex-direction : row;
+	list-style     : none;
+	padding        : 0;
+	margin         : 0;
+}
+
+.buttons a {
+	text-decoration : none;
 }
 
 .buttons > li:not(:last-child) {
-	margin-right: 12px;
+	margin-right : 12px;
 }
 
 .btn {
-	display: flex;
-	align-items: center;
-	border-radius: 3px;
-	height: 28px;
-	padding: 6px 30px;
-	font-size: 0;
+	display       : flex;
+	align-items   : center;
+	border-radius : 3px;
+	height        : 28px;
+	padding       : 6px 30px;
+	font-size     : 0;
 }
 
+.btn.github-login {
+	background-color : #4F4F4F;
+}
 
-.btn.github-login{
-	background-color: #4F4F4F;
+.btn.import-github-repos {
+	background-color: #569885;
 }
 
 .btn.view-diagrams {
-	background-color: #5F75A0;
+	background-color : #5F75A0;
 }
 
-.btn.github-login:hover, .btn.view-diagrams:hover {
-	opacity: 0.8;
-	cursor: pointer;
+.btn.github-login:hover, .btn.view-diagrams:hover, .import-github-repos:hover {
+	opacity : 0.8;
+	cursor  : pointer;
 }
 
 .btn.github-login > img {
-	display: inline-block;
+	display : inline-block;
 }
 
-.btn.github-login > span, .btn.view-diagrams > span {
-	font-size: 14px;
-	margin-left: 10px;
-	display: inline-block;
-	color: white;
+.btn > span {
+	font-size   : 14px;
+	margin-left : 10px;
+	display     : inline-block;
+	color       : white;
 }

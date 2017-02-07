@@ -48,3 +48,7 @@ app-card .repositories > li > span:not(.link) {
 	color      : #838383;
 	transition : all 100ms ease-in-out;
 }
+
+app-card .branch-name {
+	margin-right: 20px;
+}
