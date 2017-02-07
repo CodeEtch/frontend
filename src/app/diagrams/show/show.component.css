@@ -1,9 +1,9 @@
 :host {
 	display: block;
-	height: 1000px;
-	padding: 20px;
+	padding: 60px;
 }
 
-app-class-diagram:nth-child(1) {
-	left: 300px;
+app-class-diagram {
+	margin-right: 80px;
+	margin-bottom: 80px;
 }

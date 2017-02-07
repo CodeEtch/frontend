@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
+import {ActivatedRoute, Params} from "@angular/router";
+import {GithubService} from "../shared/github.service";
 
 @Component({
   selector: 'app-new',
@@ -8,7 +10,17 @@ import { Component, OnInit } from '@angular/core';
 export class NewComponent implements OnInit {
 
   repositories: Repository[];
-  constructor() { }
+
+  constructor(private route: ActivatedRoute, private githubServie: GithubService) {
+    // this.route
+    //     .queryParams
+    //     .switchMap((params: Params) => this.githubServie
+    //     .getRepositories(params['code']))
+    //     .subscribe(repo => {
+    //       console.log(repo)
+    //     })
+
+  }
 
   ngOnInit() {
     this.repositories = [

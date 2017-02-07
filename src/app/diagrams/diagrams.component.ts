@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from "@angular/core";
+import {RepositoryService} from "./shared/repository.service";
 
 @Component({
   selector: 'app-diagrams',
@@ -9,14 +10,17 @@ export class DiagramsComponent implements OnInit {
 
   diagrams: Diagram[];
 
-  constructor() { }
+  constructor(private repositoryService: RepositoryService) {
+  }
 
   ngOnInit() {
-    this.diagrams = [
-      {name: 'CodeEtch/design'},
-      {name: 'CodeEtch/api'},
-      {name: 'CodeEtch/frontend'}
-    ]
+    this.diagrams = [];
+
+    this.repositoryService
+        .getRepositories()
+        .subscribe((diagrams) => {
+          this.diagrams = diagrams;
+        });
   }
 
 }

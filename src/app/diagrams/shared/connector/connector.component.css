@@ -1,3 +1,7 @@
+:host {
+	display: block;
+	opacity: 0.5;
+}
 .horizontal-piece, .vertical-piece, .arrow-right, .arrow-left, .arrow-down, .arrow-up{
 	position: absolute;
 	float: left;

@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'diagrams', children: [
     {path: '', component: DiagramsComponent},
     {path: 'new', component: NewComponent},
-    {path: ':id', component: ShowComponent}
+    {path: ':diagramId', component: ShowComponent}
   ]}
 ];
 

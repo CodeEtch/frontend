@@ -6,8 +6,19 @@
       <div class="search-icon"></div>
     </div>
   </div>
-  <div class="btn github-login">
-    <img src="/assets/images/github-icon.svg">
-    <span>Github login</span>
-  </div>
+  <ul class="buttons">
+    <li>
+      <a href="https://github.com/login/oauth/authorize?client_id={{client_id}}">
+        <div class="btn github-login">
+          <img src="/assets/images/github-icon.svg">
+          <span>Github login</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <div class="btn view-diagrams" [routerLink]="['/', 'diagrams']">
+        <span>View diagrams</span>
+      </div>
+    </li>
+  </ul>
 </div>

@@ -3,4 +3,9 @@
  */
 interface Diagram {
     name: string;
+    owner: string,
+    branch: string,
+    uuid: string,
+    createdAt: string,
+    updatedAt: string
 }

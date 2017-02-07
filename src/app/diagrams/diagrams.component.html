@@ -1,6 +1,13 @@
 <app-card>
     <h1>All diagrams</h1>
     <ul class="diagrams">
-        <li *ngFor="let diagram of diagrams"><span class="link">{{diagram.name}}</span><span>View source</span></li>
+        <li *ngFor="let diagram of diagrams">
+            <span class="link" >
+                <a [routerLink]="[diagram.uuid]">{{diagram.owner}}&nbsp;&#47;&nbsp;{{diagram.name}}&nbsp;&#47;&nbsp;{{diagram.branch}}</a>
+            </span>
+            <span>
+                <a href="http://github.com/{{diagram.owner}}/{{diagram.name}}/tree/{{diagram.branch}}">View source</a>
+            </span>
+        </li>
     </ul>
 </app-card>

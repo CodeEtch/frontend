@@ -1,3 +1,4 @@
-<app-class-diagram *ngFor="let classInfo of classInfos" [classInfo]="classInfo"></app-class-diagram>
+<app-class-diagram *ngFor="let classInfo of classInfos" [classInfo]="classInfo" (newInfoEmmiter)="appendNewInfos($event)"></app-class-diagram>
+
 <app-connector *ngFor="let refInfo of refInfos" [startX]="getStartX(refInfo)" [startY]="getStartY(refInfo)"
                [endX]="getEndX(refInfo)" [endY]="getEndY(refInfo)"></app-connector>

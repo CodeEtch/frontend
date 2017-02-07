@@ -11,8 +11,8 @@
     <div class="divider"></div>
     <ul class="methods">
         <li *ngFor="let methodInfo of methodInfos" [attr.data-method-id]="methodInfo.uuid">
-            <img *ngIf="methodInfo.type!='constructor'" class="function-icon" src="/assets/images/icons/functionIcon.svg">
-            <img *ngIf="methodInfo.type=='constructor'" class="function-icon" src="/assets/images/icons/constructorIcon.svg">
+            <img *ngIf="methodInfo.type!='Constructor'" class="function-icon" src="/assets/images/icons/functionIcon.svg">
+            <img *ngIf="methodInfo.type=='Constructor'" class="function-icon" src="/assets/images/icons/constructorIcon.svg">
             {{methodInfo.type}}&nbsp;&nbsp;{{methodInfo.name}}&#40;&#41;
         </li>
     </ul>
